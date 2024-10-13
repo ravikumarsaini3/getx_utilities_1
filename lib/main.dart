@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      themeMode: ThemeMode.system, // Change this as needed
+      themeMode: ThemeMode.system, // Change this as neede
       home: const HomeScreen(),
     );
   }
