@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_utilities_1/screen/getx_example/counter_example.dart';
-import 'package:getx_utilities_1/screen/getx_example/opecity_example.dart';
+
+import 'package:getx_utilities_1/screen/getx_example/switch_example.dart';
 import 'package:getx_utilities_1/screen/utilities/screen_one.dart';
 import 'package:getx_utilities_1/screen/utilities/screen_three.dart';
 import 'package:getx_utilities_1/screen/utilities/screen_two.dart';
-import 'package:getx_utilities_1/screen/utilities/translation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system, // Change this as neede
-      home: OpecityExample(),
+      home: SwitchExample(),
       getPages: [
         GetPage(
           name: '/screenone',
