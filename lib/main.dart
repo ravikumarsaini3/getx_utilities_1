@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_utilities_1/screen/counter/counter_example.dart';
+import 'package:getx_utilities_1/screen/getx_example/counter_example.dart';
+import 'package:getx_utilities_1/screen/getx_example/opecity_example.dart';
 import 'package:getx_utilities_1/screen/utilities/screen_one.dart';
 import 'package:getx_utilities_1/screen/utilities/screen_three.dart';
 import 'package:getx_utilities_1/screen/utilities/screen_two.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system, // Change this as neede
-      home: const CounterExample(),
+      home: OpecityExample(),
       getPages: [
         GetPage(
           name: '/screenone',
