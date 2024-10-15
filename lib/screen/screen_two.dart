@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_utilities_1/screen/screen_three.dart';
+
 
 class ScreenTwo extends StatefulWidget {
-  var name;
-  ScreenTwo({super.key, this.name});
+  const ScreenTwo({
+    super.key,
+  });
 
   @override
   State<ScreenTwo> createState() => _ScreenTwoState();
@@ -15,15 +16,42 @@ class _ScreenTwoState extends State<ScreenTwo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('screen two' + Get.arguments[0]),
+        title: const Text('screen two'),
       ),
-      body: InkWell(
-        onTap: () {
-          Get.toNamed('/screenthree');
-        },
-        child: const Center(
-          child: Text(' go to  Screen three'),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text('english'),
+          Text('name'.tr),
+          ElevatedButton(
+              onPressed: () {
+                Get.updateLocale(const Locale('en', 'us'));
+              },
+              child: const Text('change language ')),
+          Row(
+            children: [
+              Column(
+                children: [
+                  const Text('urdu'),
+                  Text('name'.tr),
+                  ElevatedButton(
+                      onPressed: () {
+                        Get.updateLocale(const Locale('ur', 'pk'));
+                      },
+                      child: const Text('change language ')),
+                ],
+              )
+            ],
+          ),
+          InkWell(
+            onTap: () {
+              Get.toNamed('/screenthree');
+            },
+            child: const Center(
+              child: Text(' Go to  Screen three'),
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -15,13 +15,25 @@ class _ScreenOneState extends State<ScreenOne> {
       appBar: AppBar(
         title: const Text('Screen one '),
       ),
-      body: InkWell(
-        onTap: () {
-          Get.toNamed('/screentwo', arguments: ['Ravi', 'saini']);
-        },
-        child: const Center(
-          child: Text('  go to Screen two '),
-        ),
+      body: Column(
+        children: [
+          Container(
+            color: Colors.red,
+            height: Get.height * 0.7,
+            width: Get.width * 0.7,
+            child: Text('name'.tr),
+          ),
+          InkWell(
+            onTap: () {
+              Get.toNamed(
+                '/screentwo',
+              );
+            },
+            child: const Center(
+              child: Text('  go to Screen two '),
+            ),
+          ),
+        ],
       ),
     );
   }
