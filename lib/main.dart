@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_utilities_1/screen/getx_example/favourite_mark.dart';
 
 import 'package:getx_utilities_1/screen/getx_example/switch_example.dart';
 import 'package:getx_utilities_1/screen/utilities/screen_one.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system, // Change this as neede
-      home: SwitchExample(),
+      home: const FavouriteMark(),
       getPages: [
         GetPage(
           name: '/screenone',
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/screentwo',
-          page: () => ScreenTwo(),
+          page: () => const ScreenTwo(),
         ),
         GetPage(
           name: '/screenthree',

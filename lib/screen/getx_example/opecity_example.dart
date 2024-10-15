@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:getx_utilities_1/screen/getxcontroller/opacity_controller.dart';
 
 class OpecityExample extends StatefulWidget {
+  const OpecityExample({super.key});
+
   @override
   State<OpecityExample> createState() => _OpecityExampleState();
 }
@@ -14,7 +16,7 @@ class _OpecityExampleState extends State<OpecityExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Opecity example'),
+        title: const Text('Opecity example'),
       ),
       body: Column(
         children: [
@@ -25,7 +27,7 @@ class _OpecityExampleState extends State<OpecityExample> {
               color: Colors.red.withOpacity(opacitycontroller.opacity.value),
             ),
           )),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Obx(

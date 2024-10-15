@@ -17,7 +17,7 @@ class _CounterExampleState extends State<CounterExample> {
     print('object');
     return Scaffold(
       appBar: AppBar(
-        title: Text('Counter'),
+        title: const Text('Counter'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -27,7 +27,7 @@ class _CounterExampleState extends State<CounterExample> {
             () => Container(
               child: Text(
                 countergetx.x.toString(),
-                style: TextStyle(color: Colors.red, fontSize: 30),
+                style: const TextStyle(color: Colors.red, fontSize: 30),
               ),
             ),
           ))
@@ -38,7 +38,7 @@ class _CounterExampleState extends State<CounterExample> {
           countergetx.increment();
           print(' floating action button presed');
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
